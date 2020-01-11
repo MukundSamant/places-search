@@ -1,0 +1,13 @@
+<div class="container">
+    <div class = "grid-row">
+      <div [attr.data-place-name] = "place.id" class = "grid-item" *ngFor="let place of places">
+            <span>Name: {{place.name | undefinedLocationHandler}}</span>
+            <span>Address: {{place.location.address | undefinedLocationHandler}}</span>
+            <span>City: {{place.location.city | undefinedLocationHandler}}</span>
+            <span>State/Province: {{place.location.state | undefinedLocationHandler}}</span>
+            <span>Country: {{place.location.country | undefinedLocationHandler}}</span>
+      </div>
+    </div>
+</div>
+
+
